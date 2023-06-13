@@ -1,0 +1,108 @@
+<main>
+    <div class="w-100 overflow-hidden position-relative bg-black text-white"
+        style="background-image: url('https://i.pinimg.com/originals/18/2c/6c/182c6c1b1482126ca86262ed1aea026b.png'); background-size: cover;"
+        data-aos="fade">
+        <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0"></div>
+        <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
+            <div class="row d-flex align-items-center justify-content-center py-vh-5">
+                <div class="col-12 col-xl-10">
+                    <span class="h5 text-secondary fw-lighter">Explore</span>
+                    <h1 class="display-huge mt-3 mb-3 lh-1">Space news, blogs</h1>
+                </div>
+                <div class="col-12 col-xl-8">
+                    <p class="lead text-secondary">SpaceDiscovery is your trusted source for up-to-date
+                        space news. Discover the latest discoveries, missions and advances in space exploration.
+                        Explore at SpaceDiscovery</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w-100 position-relative bg-black text-white bg-cover d-flex align-items-center">
+        <div class="container-fluid px-vw-5">
+            <div class="position-absolute w-100 h-50 bg-dark bottom-0 start-0"></div>
+            <div class="row d-flex align-items-center position-relative justify-content-center px-0 g-5">
+                <div class="col-12 col-lg-6">
+                    <img src="img/webp/abstract18.webp" width="2280" height="1732" alt="abstract image"
+                        class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="img/webp/abstract6.webp" width="1116" height="1578" alt="abstract image"
+                        class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up"
+                        data-aos-duration="2000">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="img/webp/abstract9.webp" width="1116" height="848" alt="abstract image"
+                        class="img-fluid position-relative rounded-5 shadow" data-aos="fade-up"
+                        data-aos-duration="3000">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark">
+        <div class="container px-vw-5 py-vh-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-lg-7 text-lg-end" data-aos="fade-right">
+                    <h2 class="display-4">Explore the most exciting space flights. Discover the latest missions,
+                        breakthroughs, and discoveries in space exploration. Stay up to date with our spaceflight news
+                        and spark your curiosity for the unknown.</h2>
+                </div>
+                <div class="col-12 col-lg-5" data-aos="fade-left">
+                    <h3 class="pt-5">News</h3>
+                    <p class="text-secondary">Explore intriguing headlines, captivating summaries, and links to original news articles. Stay updated and discover the fascinating world of space on our space news page.<br>
+                        <a href="/noticias" class="link-fancy link-fancy-light">
+                        <svg href="/" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                        </svg>
+                        </a>
+                        
+                    </p>
+                    <h3 class="border-top border-secondary pt-5 mt-5">Blogs</h3>
+                    <p class="text-secondary">Immerse yourself in engaging articles about space exploration. We regularly update with inspiring and insightful content. Expand your knowledge and enjoy the thrilling adventure of space in our blogs section.<br>
+                        <a href="/blogs" class="link-fancy link-fancy-light">
+                        <svg href="/" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                        </svg>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-black py-vh-3">
+        <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
+
+            <div class="row gx-5">
+                <div class="p-5 pt-0 mt-5" data-aos="fade">
+                    <h2 class="display-4">Updated reports</h2>
+                </div>
+                {{#each reports}}
+                <div class="col-12 col-md-6">
+
+                    <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
+                        <div class="bg-dark shadow rounded-5 p-0">
+                            <img src="{{imageUrl}}" width="582" height="327" alt="abstract image"
+                                class="img-fluid rounded-5 no-bottom-radius" loading="lazy">
+                            <div class="p-5">
+                                <h2 class="fw-lighter">{{title}}</h2>
+                                <p class="pb-4 text-secondary">{{summary}}</p>
+                                <a href="{{url}}" class="link-fancy link-fancy-light">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+
+    </div>
+
+
+</main>

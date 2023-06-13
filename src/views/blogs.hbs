@@ -1,0 +1,51 @@
+<main>
+    <div class="container">
+        <div class="row d-flex justify-content-center py-vh-5 pb-0">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-1 fw-bold">Blogs
+                            <br><span class="fs-4">of</span>
+                            Space
+                        </h1>
+                        <p class="lead border-top pt-5 mt-5" data-aos="fade-up">Immerse yourself in a collection of insightful blogs, delve into fascinating topics, 
+                            and gain valuable perspectives on the ever-evolving realm of space exploration. 
+                            From thought-provoking discussions to informative articles, our blog page offers a 
+                            gateway to expand your knowledge and fuel your passion for the wonders of the universe. 
+                            Join us on this enriching journey and uncover the latest insights in the world of space 
+                            through our engaging blog posts!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+            {{#each blogs}}
+            <div class="col-12 col-lg-10 col-xl-8">
+                <div class="row d-flex align-items-start" data-aos="fade-right">
+                    <div class="col-12 col-lg-7">
+                        <h2 class="h3 mt-5 border-top pt-5">{{title}}</h2>
+                        <p class="text-secondary">{{summary}}</p>
+                    </div>
+                    <div class="col-12 col-lg-4 offset-lg-1 bg-gray-900 p-5 mt-5">
+                        <h3 class="h6">{{newsSite}}</h3><br>
+                        <img src="{{imageUrl}}" width="800" height="500" alt="abstract image"
+                            class="img-fluid position-relative rounded-5 shadow" data-aos="zoom-up">
+                        <p class="text-secondary">
+                            <br><a class="link-fancy link-fancy-light" href="{{url}}" target="_blank">Read more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+            <div class="row d-flex align-items-start justify-content-center py-vh-3 text-muted" data-aos="fade">
+                <div class="col-12 col-lg-10 col-xl-9">
+                    <div class="p-5 small bg-gray-900">
+                        <p>Stay tuned for regular updates! We are constantly adding new blogs to provide you with fresh and insightful content about the fascinating world of space exploration. Keep coming back to discover engaging articles, thought-provoking insights, and the latest trends in the field. Our blog section is a hub of knowledge and inspiration that will keep you informed and inspired. Don't miss out on the upcoming blog posts that will expand your horizons and fuel your curiosity about the wonders of space. Stay connected and keep exploring with us!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</main>
